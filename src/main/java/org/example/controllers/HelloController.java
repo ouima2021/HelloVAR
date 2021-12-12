@@ -9,7 +9,7 @@ public class HelloController {
 
    @GetMapping("/")
     public String sayHello(Model model) {
-       String name = System.getenv("VISITOR_Name");
+       String name = System.getenv("VISITOR_NAME");
        if (name == null) {
            name = "World";
        }
